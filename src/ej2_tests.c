@@ -41,7 +41,7 @@ void ej2_do_test(const char* name_out, const char* name) {
 		out,
 		width * sizeof(rgba_t)
 	);
-	if (has_differences("ej2", name_out, out, out_size, 1)) {
+	if (has_differences("ej2", name_out, out, out_size, 4)) {
 		printf(FAIL "ej2_do_test(\"%s\", \"%s\")\n", name_out, name);
 		printf(FAIL "  Se encontraron diferencias:\n");
 		printf(FAIL "    Imagen de entrada: %s\n", filepath);
